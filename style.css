@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* -----Color Variables------- */
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+  --white: #fff;
+
+  /* -----Font Variables------- */
+  --font1: "Poppins", sans-serif;
+  --font2: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--Violet);
+  color: var(--white);
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+/* ------Reuseables----- */
+
+h1 {
+  font-family: var(--font1);
+}
+
+p,
+a {
+  font-family: var(--font2);
+  font-weight: 400;
+}
+
+.container {
+  padding: 0 3rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* ------Nav----- */
+
+nav {
+  padding: 20px 0 50px 0;
+}
+
+/* ------Hero----- */
+.col2 {
+  text-align: center;
+}
+
+.col1 img {
+  width: 100%;
+}
+
+.col2 h1 {
+  padding: 100px 0 20px 0;
+}
+
+.col2 p {
+  line-height: 1.5;
+}
+
+.btn {
+    margin-top: 30px;
+  display: block;
+  background-color: var(--white);
+  color: var(--Violet);
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.5s;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: var(--white);
+}
+
+/* ------Footer----- */
+
+.foot {
+  margin: 100px auto 50px auto;
+}
+
+.icons {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+i {
+    color: var(--white);
+    font-size: 15px;
+    margin-right: 30px;
+    border-radius: 50px;
+    border: #fff solid 2px;
+    padding: 15px;
+}
+
+i:hover {
+    color: var(--Soft-Magenta);
+    border-color: var(--Soft-Magenta);
+}
+
+/* ------Media Query----- */
+
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    background-size: cover;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .col{
+    flex-basis: 50%;
+  }
+
+  .col2 {
+    text-align: unset;
+    padding-left: 40px;
+  }
+
+  .col2 h1 {
+    padding: 0 0 20px 0;
+    font-size: 2rem;
+  }
+
+  .btn {
+    display: inline-block;
+  }
+
+  .icons {
+    text-align: right;
+  }
+
+  i {
+    font-size: 15px;
+    margin-right: 30px;
+    border-radius: 50px;
+    border: #fff solid 2px;
+    padding: 16px;
+}
+
+}
