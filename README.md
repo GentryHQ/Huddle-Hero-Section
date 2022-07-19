@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repo](https://github.io/GentryHQ)
-- Live Site URL: [GitHub Page](https://github.io/GentryHQ)
+- Live Site URL: [GitHub Page](https://gentryhq.github.io/Huddle-Hero-Section/)
 
 ## My process
 
